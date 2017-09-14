@@ -1,4 +1,4 @@
-package com.javen.model;
+package com.jay.model;
 
 /**
  * Created by Jay on 2017/6/21.
@@ -9,8 +9,6 @@ public class User {
     private String username;
 
     private String password;
-
-    private Integer age;
 
     public Integer getId() {
         return id;
@@ -36,17 +34,9 @@ public class User {
         this.password = password == null ? null : password.trim();
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
     @Override
     public String toString() {
         return "User [id=" + id + ", username=" + username + ", password="
-                + password + ", age=" + age + "]";
+                + password + "]";
     }
 }
